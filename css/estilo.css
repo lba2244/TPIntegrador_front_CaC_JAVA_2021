@@ -1,0 +1,18 @@
+
+body{font-family:Arial, Helvetica, sans-serif ;}
+
+/*selector x etiqueta*/
+h2{
+    color: brown;
+    background-color: aqua;
+ 
+} 
+/*selector por id*/
+#parrafoUnico{
+    color: brown;
+}  
+/*selector por clase*/
+.verde {
+    color: darkgreen ;
+}
+
