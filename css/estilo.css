@@ -13,6 +13,10 @@ h2{
 }  
 /*selector por clase*/
 .verde {
-    color: darkgreen ;
+    color: rgb(19, 194, 19) ;
+}
+
+.footer {
+    color: rgb(6, 35, 61);
 }
 
