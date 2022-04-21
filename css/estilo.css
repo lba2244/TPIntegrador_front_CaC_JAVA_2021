@@ -1,6 +1,4 @@
 
-body{font-family:Arial, Helvetica, sans-serif ;}
-
 /*selector x etiqueta*/
 h2{
     color: brown;
@@ -19,7 +17,9 @@ h2{
 .footer {
     color: rgb(6, 35, 61);
 }
-#verdecito{
-    color: rgb(19, 194, 19) ;
-
-}
+.Formulario{
+    
+    color: #38DE2C;
+      }
+    
+    

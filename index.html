@@ -5,37 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="estilo.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
+    <link href="estilo.css" rel="stylesheet">
+    
     <title>TP Integrador</title>
 </head>
 <body>
   </head>
                 
-                  <div>
-                   <div class="row">
+                  
+                   <div class="row p-4">
+                     <div class="container bg-secondary">
 
-                     <div class="container-fluid row bg-secondary">
                               <div class=" ">
                                 <img class="img-fluid" src="img/codoacodo.png" width="7%" alt="Responsive image">
+                                <a class="fs-4 text-white">Conf Bs As</a>
                               </div>   
-                                    <div>
-                                      <h1 class="fs-6">Conf Bs As</h1>
-                                    </div>
                                   <div>
                                      <ul class="nav justify-content-end">
                                       <li class="nav-item"><a href="#" class="nav-link active" aria-current="page" style="color:#fff">La conferencia</a></li>
                                       <li class="nav-item"><a href="#" class="nav-link" style="color:  #adb5bd">Los oradores</a></li>
+
                                       <li class="nav-item"><a href="#" class="nav-link" style="color:  #adb5bd">El lugar y la fecha</a></li>
                                       <li class="nav-item"><a href="#" class="nav-link" style="color:  #adb5bd" >Conviértete en orador</a></li>
                                       <li class="nav-item"><a href="#" class="nav-link" style="color: rgb(19, 194, 19)"">Comprar tickets</a></li>
                                      </ul>
                                   </div> 
                                 </div>
-                              </div>
                      </div>
+                     
                          
 
 
@@ -94,7 +94,7 @@
     </div>    
           <div class="row justify-content-start py-5">
                 <div class="col-6">
-                 <img src="img/honolulu.jpg" class="card-img-top" alt="Honolulu">
+                 <img src="img/honolulu.jpg" class="img-fluid" alt="Responsive image">
                 </div>
             <div class="col-6 bg-secondary text-white">
              <h2>Bs As - Octubre</h2>
@@ -112,7 +112,7 @@
                   </div>  
               </div>
             </div>
-
+          </div>
                  <div class="container mt-3">
                   <div class="row text-secondary text-center">
                      <p class="fs-6">CONVIÉRTETE EN</p>
@@ -125,49 +125,46 @@
 
 
 
-        <div class="container-fluid mt-3">
-          <form>
-            <div class="container mt-3">
-          <form>
-            <div class="row row ">
-              <div class="col-sm-3 p-3">
-                <input type="text" class="form-control" placeholder="Nombre" name="nombre">
-              </div>
-              <div class="col-sm-4 p-3">
-                <input type="password" class="form-control" placeholder="Apellido" name="apellido">
-              </div>
-            </div>
-          </form>
-            </div>
-          
-
-
-          <div class="container mt-3">
-           
-          <form action="/action_page.php">
-            <div class="form-floating mb-4 mt-4">
-              <textarea class="form-control" rows="5"  name="text" placeholder="Comment goes here"></textarea>
-              <label for="comment">Sobre qué quieres hablar?</label>
-            </div>
-          </form>
-
-
-                    
-   
-
-                <div class="row py-3">
-                  <button type="submit" class="border: 2px solid  bg-warning btn-sm text-white">Enviar</button>
-                </div>
-              </div>
         
 
+            <div class="container mt-3">
+                <h2>Inline Forms</h2>
+                <p>If you want your form elements to appear side by side, use .row and .col:</p>
+                     <form>
+                   <!--   <div class="m-4 position -relative ">
 
-
-       
-        <div class="container-fluid ">
-          
-            <div class="w3-2018-sailor-blue">
-            <ul class="nav pb-3 mb-3 justify-content-center">
+                        <div class=" position absolute top-25 start-50"> -->
+                          <div class="row row  ">
+                                  <div class="form-group col-sm-4 p-3">
+                                    <input type="text" class="form-control" placeholder="Nombre" name="nombre">
+                                   </div>
+                                  <div class="col-sm-4 p-3">
+                                     <input type="password" class="form-control" placeholder="Apellido" name="pswd">
+                                   </div>  
+                                     
+                              <form action="/action_page.php">
+                                <div class="col-sm-6 p-3"><!-- agreeguea-->
+                                    <div class="form-floating mb-4 mt-4">
+                                      <textarea class="form-control" rows="5"  name="text" placeholder="Comment goes here"></textarea>
+                                      <label for="comment">Sobre qué quieres hablar?</label>
+                                      <small id="ayudaEmail" class="form-text text-muted">Recuerda incluir un título para tu charla</small>
+                                    </div>
+                                <div class="d-grid gap-2">
+                                  <div class="row py-3">
+                                  <button type="button" class="btn btn-success">Enviar</button>
+                                  <button class="btn btn-warning  text-white" type="button">Button</button>
+                                </div>
+                              </div> 
+                              </form>
+                          </div> 
+                        </div>
+                       </div>
+                     </form>
+             </div>
+      <div class="row p-4 ">
+         <div class="container w3-2018-sailor-blue">
+            <!-- <div class="w3-2018-sailor-blue">-->
+            <ul class="nav justify-content-between">
               <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Preguntas<br>frecuentes</a></li>
               <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contáctanos</a></li>
               <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Prensa</a></li>
@@ -176,11 +173,10 @@
               <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Privacidad</a></li>
               <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Estudiantes</a></li>
             </ul>
-          </div>
-          
+          </div>  
         </div>
-      
+       
 
-      </div>
+      
 </body>
 </html>
