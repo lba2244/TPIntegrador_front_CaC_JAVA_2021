@@ -6,24 +6,52 @@ h2{
  
 } 
 /*selector por id*/
-.parrafoUnico{
-    color: brown;
+#parrafoUnico{
+    color: rgb(88, 81, 81);
     color: #fff;;
     font-size: 13.6px;
     font-weight: 400;
     padding-right: 85px;
-    text-align: right;
+    text-align: right;   
 
 }  
 
+#puntitos{
+  text-decoration-line:underline dotted ;
+}
 
+#form {
+  text-align: center;
+  color:rgb(55, 55, 55);
+}
 
-/*selector por clase*/
-.verde {
-    color: rgb(19, 194, 19) ;
+ #floatingTextarea {
+  max-height:80px;
+  max-width:51%;
+  margin-left:265px ;
+  font-size: 15px;
+  margin-top: 10px;
+  color: #727578;
+  padding-top:5px;
 }
 
 
+
+  
+  }
+
+/*selector por clase*/
+ 
+.botonFormulario{
+  max-width: 30%;
+  position: relative;
+  margin-left: 265px;
+  margin-top: -5px;
+  background-color:rgb(135, 207, 64);
+  color: #38DE2C;
+
+
+ }
 
 .footer {
     color: rgb(6, 35, 61);
