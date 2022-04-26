@@ -6,20 +6,49 @@ h2{
  
 } 
 /*selector por id*/
-#parrafoUnico{
+.parrafoUnico{
     color: brown;
+    color: #fff;;
+    font-size: 13.6px;
+    font-weight: 400;
+    padding-right: 85px;
+    text-align: right;
+
 }  
+
+
+
 /*selector por clase*/
 .verde {
     color: rgb(19, 194, 19) ;
 }
 
+
+
 .footer {
     color: rgb(6, 35, 61);
 }
-.Formulario{
+.formulario{
     
     color: #38DE2C;
       }
     
     
+      .containerBox {
+        position: relative;
+        display: inline-block;
+      }
+      
+      
+
+
+      .img-responsive {
+        display: block;
+        max-width: 100%;
+        height: 120px;
+        margin: auto;
+        padding: auto;
+      }
+      
+     
+        
