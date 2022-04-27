@@ -7,18 +7,15 @@ h2{
 } 
 /*selector por id*/
 #parrafoUnico{
-    color: rgb(88, 81, 81);
+  
     color: #fff;;
-    font-size: 13.6px;
+    font-size: 15px;
     font-weight: 400;
     padding-right: 85px;
     text-align: right;   
 
 }  
 
-#puntitos{
-  text-decoration-line:underline dotted ;
-}
 
 #form {
   text-align: center;
@@ -48,11 +45,11 @@ h2{
   margin-left: 265px;
   margin-top: -5px;
   background-color:rgb(135, 207, 64);
-  color: #38DE2C;
+
 
 
  }
-
+/*fui por el sailor blue de colores de W3-2018.css */
 .footer {
     color: rgb(6, 35, 61);
 }
