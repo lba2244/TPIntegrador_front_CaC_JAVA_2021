@@ -8,21 +8,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
-    <link href="estilo.css" rel="stylesheet">
+    
     
     <title>TP Integrador</title>
 </head>
 <body>
-  </head>
-                
-                  
-                   <div class=" row">
-                            <nav class="navbar navbar-expand-sm navbar-dark bg-secondary"> 
-                               <div class="container-fluid ">                                 
-                                           <div class="nav d-inline-flex p-2 text-white" > 
-                                             <img class="img-fluid" src="img/codoacodo.png" width="20%" alt="Responsive image">
-                                             <h6 class=" fs-4 text-white ">Conf Bs As</h6>
-                                        <!--<p class=" fs-4 text-white">Conf Bsllll As</P> -->
+
+                         <!-- <div class=" row"> -->
+                            <nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-secondary"> 
+                               <div class="container-fluid ">  
+                                   <div class="nav d-inline-flex p-2 text-white" > 
+                                    <img class="img-fluid" src="img/codoacodo.png" width="20%" alt="Responsive image">
+                                    <h6 class=" fs-4 text-white ">Conf Bs As</h6>
+                                   <!--<p class=" fs-4 text-white">Conf Bsllll As</P> -->
                                             </div>
                                           <ul class="nav justify-content-end">
                                             <li class="nav-item"><a href="#" class="nav-link active" aria-current="page" style="color:#fff">La conferencia</a></li>
@@ -34,110 +32,109 @@
                                 </div> 
                               </nav>
                     </div>
-                 
-                     <style>
-                          .container {
-                          position: relative;
-                          text-align: center;
-                          }
-                         .text-block {
-                            position: absolute;
-                            bottom: 70px;
-                            right: -200px;
-                            background-color:white black;
-                            color: white;
-                            padding-left: 200px;
-                            padding-right: 50px;
-                          }
-                       </style>
-                 <div class="row">
-                      <div class="container">
-                        <img src="img/ba1.jpg" class="img-fluid"  alt="Responsive image">
-                        <div class=" text-block text-end">
-                          <div class=" col-md-8">
-                          <p  class="fs-3 ">Conf Bs As</p>                         
-                          <!-- vuelvo luego --> 
-                          
-                            <p>Bs As Bs As llega por primera vez a Argentina. Un evento para compartir con<br>
-                              nuestra comunidad el conocimiento y expriencia de los expertos que<br>
-                              estan creando el futuro de Internet.Ven a conocer a miembros del 
-                              evento,a otros estudiantes de Codo a Codo y los oradores de primer<br>
-                              nivel que tenemos para ti.Te esperamos!
-                            </p>
-                            <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-                            <button type="button" class="btn btn-success">Comprar tickets</button>
-                         <!--  -->
+          <!-- se fue el style que desentonaba me rendí con la imagen y salio carrousel-->    
+            
+             <nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img src="./img/codoacodo.png" style="width: 90px;">
+                 Conf Bs As
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="MenuNav">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item"><a class="nav-link active" href="#">La conferencia</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#">Los oradores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">El lugar y la fecha</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Conviértete en orador</a></li>
+                    <li class="nav-item"><a class="nav-link text-success" href="#">Comprar Tickets</a></li>
+                </ul>
+        </div> 
+    </nav>
+    <div class="carousel slide col" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/ba1.jpg" alt="BsAs" class="d-block" style="width: 100%;">
+                <div class="carousel-caption text-end">
+                  <h3>Conf Bs As</h3>
+                  <p class="h5">
+                        Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet.Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. !Te esperamos!
+                    </p>
+                    <button class="btn btn-outline-secondary" style="color: white; border-color: white;">Quiero ser orador</button>
+					<button class="btn btn-success">Comprar Tickets</button>
+                </div>
+            </div>
+        </div>  
+    </div>    
 
-                        </div>
-                      </div>
-                    </div>                    
-                 </div>
-               
 
-                       <div class="container mt-2">
-                          <div class="row text-secondary text-center">
+
+
+
+
+
+
+
+                       <div class="container-fluid  text.secondary text-center" style="padding:25px">
                            <p class="fs-6 ">CONOCE A LOS</p>
                            <p class="h3 text-black">ORADORES</p>
                           </div>
-                       </div>
-             
-        
-     <div class="container fluid">
-           <div class="row">           
-                    <div class="col-sm-4"> 
-                     <div class="card" style="width:300px">
-                        <img class="card-img-top" src="img/steve.jpg" class="img-fluid" alt="Responsive image">
-                        <div class="card-body">
-                          <h4 class="card-title">Steve Jobs</h4>
-                          <div class="container mt-3"> 
-                              <span class="badge bg-warning text-black">Java Script</span>
-                              <span class="badge bg-info">React</span>
-                          </div>
-                          <p class="card-text"><p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modibhic deleniti voluptatem quidem praesentium odio aliquam, eligendi quae est in corrupti aliquid esse culpa repudiandae reiciendis quia libero! Suscipit, aliquid?</p>
-                        </div>
-                      </div>
-                    </div>  
-                         <div class="col-sm-4">
-                            <div class="card" style="width:300px">
-                                <img class="card-img-top" src="img/bill.jpg" class="img-fluid" alt=" Responsive image">
+                       </div>       
+     <div class="container-fluid px-sm-5">
+               <div class="row ">           
+                      <div class="col sm-4 justify-content-center"> 
+                         <div class="card " style="width:300px">
+                             <img class="card-img-top" src="img/steve.jpg" alt="Steve's imag" > <!--class="img-fluid" alt="Responsive image"> -->
+                               <div class="card-body">
+                                 <h4 class="card-title">Steve Jobs</h4>
+                                   <div class="container mt-2"> 
+                                     <span class="badge bg-warning text-black">Java Script</span>
+                                     <span class="badge bg-info">React</span>
+                                   </div>
+                                  <p class="card-text"><p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modibhic deleniti voluptatem quidem praesentium odio aliquam, eligendi quae est in corrupti aliquid esse culpa repudiandae reiciendis quia libero! Suscipit, aliquid?</p>
+                               </div>
+                           </div>
+                        </div>  
+                         <div class="col sm-4 justify-content-center">
+                            <div class="card " style="width:300px">
+                                <img class="card-img-top" src="img/bill.jpg"  alt=" Bill´s imag">
                                   <div class="card-body">
                                     <h4 class="card-title">Bill Gates</h4>
                                       <div class="container mt-2"> 
                                         <span class="badge bg-warning text-black">Java Script</span>
                                         <span class="badge bg-info">React</span>
                                       </div>
-                                  <p class="card-text"><p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modibhic deleniti voluptatem quidem praesentium odio aliquam, eligendi quae est in corrupti aliquid esse culpa repudiandae reiciendis quia libero! Suscipit, aliquid?</p>
+                                     <p class="card-text"><p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modibhic deleniti voluptatem quidem praesentium odio aliquam, eligendi quae est in corrupti aliquid esse culpa repudiandae reiciendis quia libero! Suscipit, aliquid?</p>
                                   </div>
                               </div>
                           </div>   
-                               <div class="col-sm-4"> 
-                                     <div class="card" style="width:300px">
-                                       <img class="card-img-top" src="img/ada.jpeg" class="img-fluid" alt=" Responsive image">
-                                         <div class="card-body">
-                                           <h4 class="card-title">Ada Lovelace</h4>
-                                             <div class="container mt-2">                          
-                                               <span class="badge bg-secondary">Negocios</span>
-                                               <span class="badge bg-danger">Start Up</span> 
-                                             </div>                         
-                                                <p class="card-text"><p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modibhic deleniti voluptatem quidem praesentium odio aliquam, eligendi quae est in corrupti aliquid esse culpa repudiandae reiciendis quia libero! Suscipit, aliquid?</p>
-                                         </div>
-                                      </div>   
-                              </div>
-           </div>                         
+                          <div class="col sm-4 justify-content-center"> 
+                            <div class="card " style="width:300px"> 
+                                 <img class="card-img-top" src="img/ada.jpeg" alt="Ada´s imag" > <!--class="img-fluid" alt=" Responsive image">-->
+                                   <div class="card-body">
+                                     <h4 class="card-title">Ada Lovelace</h4>
+                                       <div class="container mt-2">                          
+                                         <span class="badge bg-secondary">Negocios</span>
+                                         <span class="badge bg-danger">Start Up</span> 
+                                      </div>                         
+                                     <p class="card-text"><p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modibhic deleniti voluptatem quidem praesentium odio aliquam, eligendi quae est in corrupti aliquid esse culpa repudiandae reiciendis quia libero! Suscipit, aliquid?</p>
+                                  </div>
+                               </div>   
+                           </div>
+                   </div>                       
     </div>    
-         <div class="container-fluid">
+         <div class="container-fluid pt-4">
            <div class="row justify-content-start py-5">
                 <div class="col-6 mt-2">
-                 <img src="img/honolulu.jpg" class="img-fluid" alt="Responsive image">
+                 <img src="img/honolulu.jpg" class="img-fluid" alt="homolulu ">
                 </div>
             <div class="col-6  mt-2 bg-secondary text-white">
              <h2>Bs As - Octubre</h2>
-               <p>Buenos Aires es la provincia y la localidad mas grande de la república Argentina. Honolulu es la mas
+               <p class="m-4">Buenos Aires es la provincia y la localidad mas grande de la república Argentina. Honolulu es la mas
                   sureña de entre las principales ciudades estadounidenses. Aunque el nombre Honolulese refiere al area
                   urbana en la costa sureste de la isla de Oahu, la ciudad y el condado Honolulu han formado una ciudad-
                   condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p>
-                 
-
                 <div>
                   <div class="col  text-align: center ">
                     <a href="#" class="link-dark">
@@ -148,11 +145,11 @@
             </div>
            </div>
          </div>
-                <div class="container fluid ">
+                <div class="container-fluid  text.secondary text-center" style="padding:25px; ">
                    <div class="row "> 
                       <p class="fs-6">CONVIÉRTETE EN UN</p> 
                       <p class="h3 text-black">ORADOR</p>
-                      <p>Anótate como orador para dar una <span><abbr title="attribute">charla ignite</abbr></span>.Cuéntanos de que quieres hablar!</p>
+                      <p>Anótate como orador para dar una <span><abbr title="">charla ignite</abbr></span>.Cuéntanos de que quieres hablar!</p>
         
                    <!--   <p class="fs-6" id="form ">CONVIÉRTETE EN</p>
                      <p class="h1 text-black">ORADOR</p>
@@ -160,7 +157,7 @@
                     </div>        
                  </div> 
                                    
-             <div class="container bg-danger  ">
+             <div class="container   ">
       
          <div class="w-75 m-auto">
           <form class="mt-1 " action="" method="post">
