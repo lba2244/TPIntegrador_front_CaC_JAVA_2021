@@ -13,7 +13,11 @@
     
     <title>TP Integrador</title>
 </head>
-<body>                 
+<body> 
+    
+   <script src="js/presBoton.js"></script>
+
+
             <nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-secondary"> 
                 <div class="container-fluid ">  
                     <div class="nav d-inline-flex p-2 text-white" > 
@@ -53,7 +57,7 @@
   </div>
   <!--Valor de los tickests falta negrita -->
  <div class="container-fluid"><p class="text-uppercase text-center">Venta</p></div>
- <div class="container-fluid"><h1 class="text-uppercase text-center">Valor de Ticket $200</h1></div>
+ <div class="container-fluid"><h1 class="text-uppercase text-center">Valor de Ticket $200</h2></div>
 
 
              <div class="container   ">
@@ -69,8 +73,7 @@
                              <input type="text" name="apellido" class="form-control" placeholder="Apellido">
                             </div>
                          </div>
-                     </div>  
-<!-- pongo email-->                       
+                     </div>                       
                       <div class="mb-3 mt-3">
                        <input type="email" class="form-control" id="email" placeholder="correo" name="email">
                       </div>                     
@@ -81,76 +84,59 @@
          
                     </div>
 
-<!--
-    probando
--->
-
 <div class="container   ">
       
-    <div class="w-75 m-auto">
-     <form class="mt-1 " action="" method="post">
-            <div class="mb-2">
-               <div class="row">
-                   <div class="form-group col-md-6 ">
-                    <label for="sel1" class="form-label">Cantidad</label>
-                    <input type="text" name="cantidad"  class="form-control" placeholder="cantidad">
-                   </div>
-                   <div class="col-md-6">
-                    <form action="/action_page.php">
-                        <label for="sel1" class="form-label">Categoria</label>
-                          <select class="form-select" id="sel1" name="sellist1">
-                            <option>estudiante</option>
-                            <option>trainee</option>
-                            <option>junior</option>
-                        </select>
-                   </div>
-               </div>
-            </div>
+    <div class="row">
     
-<!-- agrego TOTAL A PAGAR-->
-<div class="row">
-  <div class="col mt-3 mx-5">
-      <div class="input-group">
-          <span class="input-group-text">Total a Pagar $</span>
-          <input type="text " class="form-control" placeholder="" name="TotalPagar"
-              id="idTotalPagar" readonly>
-      </div>
-  </div>
-</div>
-
-                
-<!--hasta  -->
-              <form class="mt-3 " action="" method="post">
+      
+       
+        
+     <div class="w-75 m-auto">
+         <form class="mt-1 " action="" method="post">
                 <div class="mb-2">
-                   <div class="row mt-3">
-     <!--                 <div class="form-group col-mt-6 ">   BOTON-->
-               <div class="d-grid gap-2">
-                               <!--  <div class=" row"> -->
- <div class="btn-group ">
-               <button type="btn btn-block"  class="btn border-0 rounded   text-white p-2 btn-danger" >Borrar</button>
-              
-               <button type="btn btn-block"  class="btn border-0 rounded  text-white p-2"style="background-color: rgb(135, 207, 64)"  >Resumen</button>
-            </div>
-
-            <!-- ptrube-->
-
-            <div class="row my-2">
-              <div class="col d-grid">
-                  <input type="reset" class="btn btn-success" style="background-color: rgb(135, 207, 64)" value="Borrar" ></button>
-              </div>
-              <div class="col d-grid">
-                  <input type="button" class="btn btn-success" style="background-color: rgb(135, 207, 64)" value="Resumen"></button>
-              </div>
-              </div>
-
-
-             <!--hasta aca puerbeo -->
-    </form>
-             </div>  
-</div> 
-</div>                 
-
-        </div>
+                   <div class="row">
+                       <div class="form-group col-md-6 ">
+                        <label for="sel1" class="form-label">Cantidad</label>
+                        <input type="text" name="cantidad"  class="form-control" placeholder="cantidad">
+                       </div>
+                       <div class="col-md-6">
+                        <form action="/action_page.php">
+                            <label for="sel1" class="form-label">Categoria</label>
+                              <select class="form-select" id="sel1" name="sellist1">
+                                <option>estudiante</option>
+                                <option>trainee</option>
+                                <option>junior</option>
+                            </select>
+                       </div>
+                   </div>
+                </div>
+        
+                
+                <!-- agrego TOTAL A PAGAR-->
+                <div class="row">
+                
+                <!--<div class="col  mx-5"> -->
+                    <div id="TotalPagar" class="TotalPagar" >
+                        <div class="input-group">
+                            <span class="input-group-text">Total a Pagar $</span>
+                            <input type="text " class="form-control" placeholder="" name="TotalPagar"
+                                id="idTotalPagar" readonly>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row my-2">
+        
+        
+                    <div class="col d-grid">
+                        <input type="reset" class="btn btn-success" style="background-color: rgb(135, 207, 64)" value="Borrar" ></button>
+                    </div>
+                    <div class="col d-grid">
+                        <input type="button" class="btn btn-success" style="background-color: rgb(135, 207, 64)" value="Resumen"></button>
+                    </div>
+                  </div>
+             </div>                  
+       </div> 
+ </div>
 
 
              <div class=" row mt-2 "> 
