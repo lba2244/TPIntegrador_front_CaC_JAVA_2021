@@ -56,7 +56,7 @@
      <div class="col"></div>
   </div>
   <!--Valor de los tickests falta negrita -->
- <div class="container-fluid"><p class="text-uppercase text-center">Venta</p></div>
+ <div class="container-fluid"><p class="text-uppercase text-center" id="venta">Venta</p></div>
  <div class="container-fluid"><h1 class="text-uppercase text-center">Valor de Ticket $200</h2></div>
 
 
@@ -67,10 +67,10 @@
                      <div class="mb-2">
                         <div class="row">
                            <div class="form-group col-md-6 ">        
-                              <input type="text" name="nombre"  class="form-control" placeholder="Nombre">
+                              <input type="text" class="form-control" id="name"   placeholder="Nombre">
                            </div>
                           <div class="col-md-6">
-                             <input type="text" name="apellido" class="form-control" placeholder="Apellido">
+                             <input type="text"class="form-control" id="lname"  placeholder="Apellido">
                             </div>
                          </div>
                      </div>                       
@@ -97,7 +97,7 @@
                    <div class="row">
                        <div class="form-group col-md-6 ">
                         <label for="sel1" class="form-label">Cantidad</label>
-                        <input type="text" name="cantidad"  class="form-control" placeholder="cantidad">
+                        <input type="text" name="cantidad"  class="form-control"  id= "cantidad"placeholder="cantidad">
                        </div>
                        <div class="col-md-6">
                         <form action="/action_page.php">
@@ -114,11 +114,11 @@
                 
                 <!-- agrego TOTAL A PAGAR-->
                 <div class="row">
-                    <div id="TotalPagar" class="TotalPagar" >
+                  <div class="TotalAPagar" >
                         <div class="input-group">
                             <span class="input-group-text">Total a Pagar $</span>
-                            <input type="text " class="form-control" placeholder="" name="TotalPagar"
-                                id="idTotalPagar" readonly>
+                            <input type="text " class="form-control" id="totalAPagar" placeholder="" name="TotalApagar"
+                                 readonly>
                         </div>
                     </div>
                 </div> 
@@ -129,7 +129,7 @@
                         <input type="reset" class="btn btn-success" style="background-color: rgb(135, 207, 64)" value="Borrar" ></button>
                     </div>
                     <div class="col d-grid">
-                        <input type="button" class="btn btn-success" style="background-color: rgb(135, 207, 64)" value="Resumen"></button>
+                        <input type="button" class="btn btn-success" id="resumen" style="background-color: rgb(135, 207, 64)" value="Resumen"></button>
                     </div>
                   </div>
              </div>                  

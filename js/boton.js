@@ -1,37 +1,41 @@
 /*console.log("presiono boton  a ver si sale")*/
 
 function calcularPrecio(evt) {
-    let cant = parseInt(document.getElementById("cantidad").value);
-    let descuento = document.getElementById("categoria").value;
-    let totalAPagar = document.getElementByI("totalAPagar");
-    let salida = document.getElementById("resumen");
+    let cantidad = document.getElementById("cantidad").value;
+    let descuento = document.getElementById("sel1").value;
+    let totalAPagar = document.getElementById("totalAPagar").value;
+    
 
     let estudiante = parseFloat(0.2);
     let trainee = parseFloat(0.5);
     let junior = parseFloat(0.85);
-    let entrada = parseInt(200);
+    let valorEntrada = parseInt(200);
     let total;
 
 
 switch (descuento) {
     case "estudiante":
-        total = entrada * cantidad * estudiante;
+        total = valorEntrada * cantidad * estudiante;
         break;
     case "trainee":
-        total = entrada * cantidad * trainee;
+        total = valorEntrada * cantidad * trainee;
          break;       
     case "junior":
-        total = entrada * cantidad * junior;
+        total = valorEntrada * cantidad * junior;
          break;
     default:
-        total=cantidad * entrada;
+        total=cantidad * valorEntrada;
 }
-      totalAPagar.innerHTML="total a Pagar" +total ;
-     
-
-   
-console.log("total");
-
-resumen.onclick=total;
-
+document.getElementById("totalAPagar").value =  + total
+/*console.log(evt);*/
+console.log(totalAPagar) 
 }
+
+/*totalAPagar.innerHTML="total a pagar $" +total*/
+
+document.getElementById("resumen").onclick = calcularPrecio;
+
+
+
+ 
+
