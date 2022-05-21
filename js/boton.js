@@ -1,7 +1,7 @@
 /*console.log("presiono boton  a ver si sale")*/
 
-function calcularPrecio(evt) {
-    let cantidad = document.getElementById("cantidad").value;
+function calcularPrecio() {
+    let cantidad = parseInt(document.getElementById("cantidad").value);
     let descuento = document.getElementById("sel1").value;
     let totalAPagar = document.getElementById("totalAPagar").value;
     
@@ -26,14 +26,15 @@ switch (descuento) {
     default:
         total=cantidad * valorEntrada;
 }
-document.getElementById("totalAPagar").value =  + total
-/*console.log(evt);*/
-console.log(totalAPagar) 
+document.getElementById("resumen").onclick= calcularPrecio;
+document.getElementById("totalAPagar").value = total;
+/*console.log(evt);
+console.log(totalAPagar) */
 }
 
-/*totalAPagar.innerHTML="total a pagar $" +total*/
+document.getElementById("totalAPagar");
 
-document.getElementById("resumen").onclick = calcularPrecio;
+
 
 
 
