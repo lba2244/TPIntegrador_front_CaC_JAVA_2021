@@ -7,4 +7,4 @@
  [Mi TPIntegrador con JS actualizado avance...]( https://lba2244.github.io/CaC_TPIntegrador_front/)
 
  ## Trabajo Práctico Intergrador Front-End 2022_1C
-  https://lba2244.github.io/CaC_TPIntegrador_front/
+https://lba2244.github.io/TPIntegrador_front_CaC_JAVA_2021/
